@@ -45,7 +45,6 @@ class AbsolutePathDetectorExperimental(RegexBasedDetector):
         **kwargs: Any
     ) -> Set[PotentialSecret]:
         """This examines a line and finds all possible secret values in it."""
-        print(os.path.isabs("C:\\Program Files\\nginx\\logs\\access.log"))
         output = set()
         # Expands environment variables before checking if the path is absolute
         # expanded_line = os.path.expandvars(line)
