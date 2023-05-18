@@ -1,7 +1,7 @@
 import pytest
-from detect_secrets.plugins.aws_sensitive_info import AWSSensitiveInfoDetector
+from detect_secrets.plugins.aws_sensitive_info import AWSSensitiveInfoDetectorExperimental
 
-class TestAWSSensitiveInfoDetector:
+class TestAWSSensitiveInfoDetectorExperimental:
     """
       Testing strategy
     1. Partition on AWS resource type:
@@ -80,6 +80,6 @@ class TestAWSSensitiveInfoDetector:
         ]
     )
     def test_analyze_line(self, payload, should_flag):
-        logic = AWSSensitiveInfoDetector()
+        logic = AWSSensitiveInfoDetectorExperimental()
         output = logic.analyze_line(filename='mock_filename', line=payload)
         assert len(output) == int(should_flag)

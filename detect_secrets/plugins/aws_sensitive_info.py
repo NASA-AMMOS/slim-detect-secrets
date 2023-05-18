@@ -11,7 +11,7 @@ import re
 from detect_secrets.plugins.base import RegexBasedDetector
 
 
-class AWSSensitiveInfoDetector(RegexBasedDetector):
+class AWSSensitiveInfoDetectorExperimental(RegexBasedDetector):
     """Scans for AWS sensitive information"""
     secret_type = 'AWS Sensitive Information (Experimental Plugin)'
     denylist = []

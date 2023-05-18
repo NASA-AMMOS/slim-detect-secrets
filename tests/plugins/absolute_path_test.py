@@ -1,8 +1,8 @@
 import pytest
-from detect_secrets.plugins.absolute_filepath import AbsolutePathDetector
+from detect_secrets.plugins.absolute_filepath import AbsolutePathDetectorExperimental
 
 
-class TestAbsolutePathDetector:
+class TestAbsolutePathDetectorExperimental:
     """
     Testing strategy
 
@@ -57,6 +57,6 @@ class TestAbsolutePathDetector:
           ],
       )
     def test_analyze_line(self, payload, should_flag):
-        logic = AbsolutePathDetector()
+        logic = AbsolutePathDetectorExperimental()
         output = logic.analyze_line(filename='mock_filename', line=payload)
         assert len(output) == int(should_flag)

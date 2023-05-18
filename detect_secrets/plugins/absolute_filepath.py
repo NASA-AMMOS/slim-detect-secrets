@@ -9,7 +9,7 @@ from ..constants import VerifiedResult
 from detect_secrets.util.inject import call_function_with_arguments
 
 
-class AbsolutePathDetector(RegexBasedDetector):
+class AbsolutePathDetectorExperimental(RegexBasedDetector):
     """Absolute Path Detector.
     
     This class is designed to efficiently and accurately detect absolute file paths within given text.
