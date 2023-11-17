@@ -5,7 +5,7 @@ name: detect-secrets-ci
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, action-feature-plugin-email_address ]
   pull_request:
   workflow_dispatch:
   schedule:
