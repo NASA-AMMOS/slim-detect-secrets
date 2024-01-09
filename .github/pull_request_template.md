@@ -1,19 +1,13 @@
-* **Please check if the PR fulfills these requirements**
-- [ ] Tests for the changes have been added
-<!-- (for bug fixes / features) -->
-- [ ] Docs have been added / updated
-<!-- (for bug fixes / features) -->
-- [ ] All CI checks are green
-
-* **What kind of change does this PR introduce?**
-<!-- (Bug fix, feature, docs update, ...) -->
-
-* **What is the current behavior?**
-<!-- (You can also link to an open issue here) -->
-
-* **What is the new behavior (if this is a feature change)?**
-
-* **Does this PR introduce a breaking change?**
-<!-- (What changes might users need to make in their application due to this PR?) -->
-
-* **Other information**:
+## Purpose
+- Clear, easy-to-understand sentences outlining the purpose of the PR
+## Proposed Changes
+- [ADD] ...
+- [CHANGE] ...
+- [FIX] ...
+## Issues
+- Links to relevant issues
+- Example: issue-XYZ
+## Testing
+- Provide some proof you've tested your changes 
+- Example: test results available at ...
+- Example: tested on operating system ...
